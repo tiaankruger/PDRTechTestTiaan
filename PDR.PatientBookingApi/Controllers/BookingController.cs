@@ -56,7 +56,8 @@ namespace PDR.PatientBookingApi.Controllers
             var bookingId = new Guid();
             var bookingStartTime = newBooking.StartTime;
 
-            // Check that start time is not in the past (so already missed at booked time
+            // Check that start time is not in the past (so already missed at booked time)
+            //This should really be checked in the front end as well
             if (bookingStartTime < DateTime.Now)
                 return StatusCode(400);
 
@@ -67,9 +68,9 @@ namespace PDR.PatientBookingApi.Controllers
             var bookingDoctor = _context.Doctor.FirstOrDefault(x => x.Id == newBooking.DoctorId);
             var bookingSurgeryType = _context.Patient.FirstOrDefault(x => x.Id == bookingPatientId).Clinic.SurgeryType;
 
-            //check for existing appointment starting in bookingwindow 
+            //check for existing appointment starting in bookingwindow (could also be checked on front end with jqeury)
             var startWindow = _context.Order.Where(appointment => appointment.StartTime > bookingStartTime && appointment.StartTime < bookingEndTime).Count();
-            //check for existing appointment ending in bookingwindow 
+            //check for existing appointment ending in bookingwindow (could also be checked on front end with jqeury)
             var endWindow = _context.Order.Where(appointment => appointment.EndTime > bookingStartTime && appointment.EndTime < bookingEndTime).Count();
             if (endWindow > 0 || startWindow > 0)
                 return StatusCode(400);
