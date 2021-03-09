@@ -41,6 +41,9 @@ namespace PDR.PatientBooking.Service.DoctorServices.Validation
             if (string.IsNullOrEmpty(request.Email))
                 errors.Add("Email must be populated");
 
+            if (!IsValidEmail(request.Email))
+                errors.Add("Email must be a valid email address");
+
             if (errors.Any())
             {
                 result.PassedValidation = false;
@@ -49,6 +52,21 @@ namespace PDR.PatientBooking.Service.DoctorServices.Validation
             }
 
             return false;
+        }
+
+        bool IsValidEmail(string email)
+        {
+            //this function is a good general function, so would likely spin it off into a sperate service so that it doesnt need to be repeated.
+            //But because of time constraint, and not stated by test, it is left out for now
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private bool DoctorAlreadyInDb(AddDoctorRequest request, ref PdrValidationResult result)

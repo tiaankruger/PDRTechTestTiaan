@@ -7426,11 +7426,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBookingApi\\PDR.PatientBookingApi.csproj",
+      "projectUniqueName": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBookingApi\\PDR.PatientBookingApi.csproj",
       "projectName": "PDR.PatientBookingApi",
-      "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBookingApi\\PDR.PatientBookingApi.csproj",
+      "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBookingApi\\PDR.PatientBookingApi.csproj",
       "packagesPath": "C:\\Users\\manti\\.nuget\\packages\\",
-      "outputPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBookingApi\\obj\\",
+      "outputPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBookingApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\manti\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7447,11 +7447,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj": {
-              "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj"
+            "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj": {
+              "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj"
             },
-            "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj": {
-              "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj"
+            "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj": {
+              "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj"
             }
           }
         }

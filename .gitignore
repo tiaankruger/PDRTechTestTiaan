@@ -1,0 +1,26 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/PDR.PatientBooking.Data/bin/Debug/netcoreapp3.1
+/.vs/PDR.TechnicalInterview/config/applicationhost.config
+/.vs/PDR.TechnicalInterview/v16/TestStore/0/testlog.manifest
+/.vs/PDR.TechnicalInterview/v16/TestStore/0/001.testlog
+/.vs/PDR.TechnicalInterview/v16/.suo
+/PDR.PatientBooking.Data/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Data.pdb
+/PDR.PatientBooking.Data/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Data.dll
+/PDR.PatientBooking.Data/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Data.csproj.FileListAbsolute.txt
+/PDR.PatientBooking.Data/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Data.csproj.CoreCompileInputs.cache
+/PDR.PatientBooking.Service/bin/Debug/netcoreapp3.1/PDR.PatientBooking.Service.pdb
+/PDR.PatientBooking.Service/bin/Debug/netcoreapp3.1/PDR.PatientBooking.Service.dll
+/PDR.PatientBooking.Service/bin/Debug/netcoreapp3.1/PDR.PatientBooking.Service.deps.json
+/PDR.PatientBooking.Service/bin/Debug/netcoreapp3.1/PDR.PatientBooking.Data.pdb
+/PDR.PatientBooking.Service/bin/Debug/netcoreapp3.1/PDR.PatientBooking.Data.dll
+/PDR.PatientBooking.Service/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Service.pdb
+/PDR.PatientBooking.Service/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Service.dll
+/PDR.PatientBooking.Service/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Service.csproj.FileListAbsolute.txt
+/PDR.PatientBooking.Service/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Service.csproj.CoreCompileInputs.cache
+/PDR.PatientBooking.Service/obj/Debug/netcoreapp3.1/PDR.PatientBooking.Service.csproj.CopyComplete
+/PDR.PatientBooking.Service.Tests/bin/Debug/netcoreapp3.1/cs
+/PDR.PatientBooking.Service.Tests/bin/Debug/netcoreapp3.1/de
+/PDR.PatientBooking.Service.Tests/bin/Debug/netcoreapp3.1

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj": {}
+    "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj": {}
   },
   "projects": {
-    "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj": {
+    "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj",
+        "projectUniqueName": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj",
         "projectName": "PDR.PatientBooking.Data",
-        "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj",
+        "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj",
         "packagesPath": "C:\\Users\\manti\\.nuget\\packages\\",
-        "outputPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Data\\obj\\",
+        "outputPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\manti\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj": {
+    "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj",
+        "projectUniqueName": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj",
         "projectName": "PDR.PatientBooking.Service",
-        "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj",
+        "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Service\\PDR.PatientBooking.Service.csproj",
         "packagesPath": "C:\\Users\\manti\\.nuget\\packages\\",
-        "outputPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Service\\obj\\",
+        "outputPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\manti\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj": {
-                "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTest\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj"
+              "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj": {
+                "projectPath": "E:\\TechTests\\Push Doctor\\PDRTechTestTiaan\\PDR.PatientBooking.Data\\PDR.PatientBooking.Data.csproj"
               }
             }
           }
