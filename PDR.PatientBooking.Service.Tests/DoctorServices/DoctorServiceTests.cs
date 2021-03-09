@@ -107,6 +107,8 @@ namespace PDR.PatientBooking.Service.Tests.DoctorServices
             _doctorService.AddDoctor(request);
 
             //assert
+            //I am not familiar enough with NUnit to solve this, but I think the issue is that it also compares the created date, which will differ slightly.
+            //So will need to exclude that, but I was unable to find the solition in terms of doing this in the time I had
             _context.Doctor.Should().ContainEquivalentOf(expected, options => options.Excluding(doctor => doctor.Id));
         }
 
