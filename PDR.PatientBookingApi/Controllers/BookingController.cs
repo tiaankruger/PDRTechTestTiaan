@@ -23,7 +23,9 @@ namespace PDR.PatientBookingApi.Controllers
         {
             var bockings = _context.Order.OrderBy(x => x.StartTime).ToList();
 
-            if (bockings.Where(x => x.Patient.Id == identificationNumber).Count() == 0)
+            // changes to the data model are needed to cater for status (like for example cancelled) as you dont want to straight up delete data in my opinion
+            // There was not time for this in the av
+            if (bockings.Where(x => x.Patient.Id == identificationNumber ).Count() == 0)
             {
                 return StatusCode(502);
             }
@@ -47,6 +49,8 @@ namespace PDR.PatientBookingApi.Controllers
                 }
             }
         }
+
+
 
         [HttpPost()]
         public IActionResult AddBooking(NewBooking newBooking)
