@@ -51,14 +51,28 @@ namespace PDR.PatientBookingApi.Controllers
         [HttpPost()]
         public IActionResult AddBooking(NewBooking newBooking)
         {
+
+            
             var bookingId = new Guid();
             var bookingStartTime = newBooking.StartTime;
+
+            // Check that start time is not in the past (so already missed at booked time
+            if (bookingStartTime < DateTime.Now)
+                return StatusCode(400);
+
             var bookingEndTime = newBooking.EndTime;
             var bookingPatientId = newBooking.PatientId;
             var bookingPatient = _context.Patient.FirstOrDefault(x => x.Id == newBooking.PatientId);
             var bookingDoctorId = newBooking.DoctorId;
             var bookingDoctor = _context.Doctor.FirstOrDefault(x => x.Id == newBooking.DoctorId);
             var bookingSurgeryType = _context.Patient.FirstOrDefault(x => x.Id == bookingPatientId).Clinic.SurgeryType;
+
+            //check for existing appointment starting in bookingwindow 
+            var startWindow = _context.Order.Where(appointment => appointment.StartTime > bookingStartTime && appointment.StartTime < bookingEndTime).Count();
+            //check for existing appointment ending in bookingwindow 
+            var endWindow = _context.Order.Where(appointment => appointment.EndTime > bookingStartTime && appointment.EndTime < bookingEndTime).Count();
+            if (endWindow > 0 || startWindow > 0)
+                return StatusCode(400);
 
             var myBooking = new Order
             {
