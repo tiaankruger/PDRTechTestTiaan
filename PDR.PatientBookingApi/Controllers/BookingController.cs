@@ -72,12 +72,9 @@ namespace PDR.PatientBookingApi.Controllers
             var bookingDoctor = _context.Doctor.FirstOrDefault(x => x.Id == newBooking.DoctorId);
             var bookingSurgeryType = _context.Patient.FirstOrDefault(x => x.Id == bookingPatientId).Clinic.SurgeryType;
 
-            //check for existing appointment starting in bookingwindow (could also be checked on front end with jqeury)
-            var startWindow = _context.Order.Where(appointment => appointment.StartTime > bookingStartTime && appointment.StartTime < bookingEndTime).Count();
-            //check for existing appointment ending in bookingwindow (could also be checked on front end with jqeury)
-            var endWindow = _context.Order.Where(appointment => appointment.EndTime > bookingStartTime && appointment.EndTime < bookingEndTime).Count();
-            if (endWindow > 0 || startWindow > 0)
-                return StatusCode(400);
+           
+            if (!CheckThatBookingWindowIsAvailable(bookingStartTime, bookingEndTime) )
+            { return StatusCode(400); }
 
             var myBooking = new Order
             {
@@ -118,6 +115,18 @@ namespace PDR.PatientBookingApi.Controllers
             latestBooking.SurgeryType = (int)bookings2[i].GetSurgeryType();
 
             return latestBooking;
+        }
+
+        private bool CheckThatBookingWindowIsAvailable(DateTime bookingStartTime, DateTime bookingEndTime)
+        {
+            //check for existing appointment starting in bookingwindow (could also be checked on front end with jqeury)
+            int startWindow = _context.Order.Where(appointment => appointment.StartTime > bookingStartTime && appointment.StartTime < bookingEndTime).Count();
+            //check for existing appointment ending in bookingwindow (could also be checked on front end with jqeury)
+            int endWindow = _context.Order.Where(appointment => appointment.EndTime > bookingStartTime && appointment.EndTime < bookingEndTime).Count();
+
+            if (endWindow > 0 || startWindow > 0)
+                return false;
+            else return true;
         }
 
         private class MyOrderResult
